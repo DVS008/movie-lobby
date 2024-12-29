@@ -13,7 +13,8 @@ const movieSchema: Schema = new Schema({
     rating: { type: Number, required: true },
     streamingLink: { type: String, required: true }
 }, {
-    collection: 'movieLobby' // Specify the collection name here
+    collection: 'movieLobby', 
+    versionKey: false
 });
 
 const MovieModel = mongoose.model<Movie>('movieLobby', movieSchema);

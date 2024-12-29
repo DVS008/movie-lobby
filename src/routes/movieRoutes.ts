@@ -5,7 +5,7 @@ import checkAdmin from '../middlewares/authMiddleware';
 const router = Router();
 const movieController = new MovieController();
 
-// Define routes for movie-related endpoints
+//routes for movie-related endpoints
 router.get('/', movieController.listMovies);
 router.get('/search', movieController.searchMovies);
 router.post('/add', checkAdmin, movieController.addMovie);
