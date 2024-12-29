@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "676e9f1461835b7be5ac825c"
+  },
+  "title": "The Matrix",
+  "genre": "Sci-Fi",
+  "rating": 9,
+  "streamingLink": "https://example.com/matrix"
+},
+{
+  "_id": {
+    "$oid": "676e9f1461835b7be5ac825d"
+  },
+  "title": "Inception",
+  "genre": "Sci-Fi",
+  "rating": 8.8,
+  "streamingLink": "https://example.com/inception"
+},
+{
+  "_id": {
+    "$oid": "676e9f1461835b7be5ac825e"
+  },
+  "title": "The Dark Knight",
+  "genre": "Action",
+  "rating": 9,
+  "streamingLink": "https://example.com/dark-knight"
+},
+{
+  "_id": {
+    "$oid": "676e9f1461835b7be5ac825f"
+  },
+  "title": "Interstellar",
+  "genre": "Sci-Fi",
+  "rating": 8.6,
+  "streamingLink": "https://example.com/interstellar"
+},
+{
+  "_id": {
+    "$oid": "676e9f1461835b7be5ac8260"
+  },
+  "title": "Parasite",
+  "genre": "Thriller",
+  "rating": 8.6,
+  "streamingLink": "https://example.com/parasite"
+},
+{
+  "_id": {
+    "$oid": "676eaf2820d8c943540404df"
+  },
+  "title": "Parasite",
+  "genre": "Thriller",
+  "rating": 8.6,
+  "streamingLink": "https://example.com/parasite",
+  "__v": 0
+}]
