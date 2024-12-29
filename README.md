@@ -185,9 +185,9 @@ Install these
     - Install MongoDB Compass
     - Use connection string: `mongodb://127.0.0.1:27017/dbconnect`
     - Create database `dbconnect` with collections:
-      - `movieLobby`
-      - `users`
-      Import the collection provided here in JSON format.
+      - `movieLobby` : https://github.com/DVS008/movie-lobby/blob/main/collections/dbconnect.movieLobby.json  (test data provide for reference)
+      - `users` : https://github.com/DVS008/movie-lobby/blob/main/collections/dbconnect.users.json (test data provide for reference)
+      Import the collection to Compass, provided here in JSON format.
 
 
 5. Start MongoDB Service:
@@ -200,7 +200,8 @@ Install these
     ```bash
     npm start
     ```
-Import the collection provided here in JSON format with Postman to test the end points.
+Import the postman collection provided here in JSON format with Postman tool to test the end points.
+https://github.com/DVS008/movie-lobby/blob/main/collections/MovieLobby.postman_collection.json
 
 7. To run tests:
     ```bash
