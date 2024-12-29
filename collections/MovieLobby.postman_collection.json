@@ -1,0 +1,793 @@
+{
+	"info": {
+		"_postman_id": "cb4510d8-052d-459a-a1d2-5b4677ef234f",
+		"name": "MovieLobby",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40180340"
+	},
+	"item": [
+		{
+			"name": "Get Movies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Movies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "958"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3be-MeiVKWyuHEtVgzXSLzzvt0m1ZGw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 28 Dec 2024 12:07:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"676e9f1461835b7be5ac825c\",\n        \"title\": \"The Matrix\",\n        \"genre\": \"Sci-Fi\",\n        \"rating\": 9,\n        \"streamingLink\": \"https://example.com/matrix\"\n    },\n    {\n        \"_id\": \"676e9f1461835b7be5ac825d\",\n        \"title\": \"Inception\",\n        \"genre\": \"Sci-Fi\",\n        \"rating\": 8.8,\n        \"streamingLink\": \"https://example.com/inception\"\n    },\n    {\n        \"_id\": \"676e9f1461835b7be5ac825e\",\n        \"title\": \"The Dark Knight\",\n        \"genre\": \"Action\",\n        \"rating\": 9,\n        \"streamingLink\": \"https://example.com/dark-knight\"\n    },\n    {\n        \"_id\": \"676e9f1461835b7be5ac825f\",\n        \"title\": \"Interstellar\",\n        \"genre\": \"Sci-Fi\",\n        \"rating\": 8.6,\n        \"streamingLink\": \"https://example.com/interstellar\"\n    },\n    {\n        \"_id\": \"676e9f1461835b7be5ac8260\",\n        \"title\": \"Parasite\",\n        \"genre\": \"Thriller\",\n        \"rating\": 8.6,\n        \"streamingLink\": \"https://example.com/parasite\"\n    },\n    {\n        \"_id\": \"676fb2a6b2dd6532e86fa380\",\n        \"title\": \"Parasite1\",\n        \"genre\": \"Thriller\",\n        \"rating\": 8.6,\n        \"streamingLink\": \"https://example.com/parasite\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"676fb2b5b2dd6532e86fa382\",\n        \"title\": \"Parasite1\",\n        \"genre\": \"Thriller\",\n        \"rating\": 8.6,\n        \"streamingLink\": \"https://example.com/parasite\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Movies by title or Genre",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/movies/search/?genre=thriller&title=parasite3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "genre",
+							"value": "thriller"
+						},
+						{
+							"key": "title",
+							"value": "parasite3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Movies by title",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/movies/search/?title=parasite3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"search",
+								""
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "parasite3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "143"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8f-iVA+uLyyhzcSXBICbU4hsusoPYM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 28 Dec 2024 13:22:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"676fb2b5b2dd6532e86fa382\",\n        \"title\": \"Parasite3\",\n        \"genre\": \"Thriller\",\n        \"rating\": 8.6,\n        \"streamingLink\": \"https://example.com/parasite\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "Get Movies by Genre",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/movies/search/?genre=thriller",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"search",
+								""
+							],
+							"query": [
+								{
+									"key": "genre",
+									"value": "thriller"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "285"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11d-pAbFib7/wdoqOheO9fBNP+qz9bk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 28 Dec 2024 13:24:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"676fb2a6b2dd6532e86fa380\",\n        \"title\": \"Parasite1\",\n        \"genre\": \"Thriller\",\n        \"rating\": 8.6,\n        \"streamingLink\": \"https://example.com/parasite\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"676fb2b5b2dd6532e86fa382\",\n        \"title\": \"Parasite3\",\n        \"genre\": \"Thriller\",\n        \"rating\": 8.6,\n        \"streamingLink\": \"https://example.com/parasite\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "Get Movies by title and Genre",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/movies/search/?genre=thriller&title=parasite3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"search",
+								""
+							],
+							"query": [
+								{
+									"key": "genre",
+									"value": "thriller"
+								},
+								{
+									"key": "title",
+									"value": "parasite3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "143"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8f-iVA+uLyyhzcSXBICbU4hsusoPYM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 28 Dec 2024 13:25:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"676fb2b5b2dd6532e86fa382\",\n        \"title\": \"Parasite3\",\n        \"genre\": \"Thriller\",\n        \"rating\": 8.6,\n        \"streamingLink\": \"https://example.com/parasite\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "generate-token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"adminUser2\",\r\n    \"password\": \"adminpassword2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/generate-token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"generate-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Movies",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjc2ZmIyMzdkMmUyMzY2MTE4OGY3M2MxIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTczNTQ4MjEwNywiZXhwIjoxNzM1NDg1NzA3fQ.tswgxEB579yh8j6HpmCSIYxsArCdNsH5SIRzPT8WD8w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Parasite3\",\r\n    \"genre\": \"Thriller\",\r\n    \"rating\": 8.6,\r\n    \"streamingLink\": \"https://example.com/parasite\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movies/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add Movies",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjc2ZmIyMzdkMmUyMzY2MTE4OGY3M2MxIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTczNTM4NzY0MCwiZXhwIjoxNzM1MzkxMjQwfQ.vue029kjR9jldJ4oeYV0Oc1UjxI4FL8IezO41oaAMjE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Parasite2\",\r\n    \"genre\": \"Thriller\",\r\n    \"rating\": 8.6,\r\n    \"streamingLink\": \"https://example.com/parasite\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/movies/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"add"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "141"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8d-WH189TN/KVCAN8SNxRGwQdBEBSI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 28 Dec 2024 12:07:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"676fea1735d50e0bb04197fb\",\n    \"title\": \"Parasite2\",\n    \"genre\": \"Thriller\",\n    \"rating\": 8.6,\n    \"streamingLink\": \"https://example.com/parasite\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Movie",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjc2ZmIyMzdkMmUyMzY2MTE4OGY3M2MxIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTczNTQ4MzgzMSwiZXhwIjoxNzM1NDg3NDMxfQ.IrDUdXN1aInRJPfwmPRmb1G5eK-_qoHqlOsul-GmQjA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/movies/676e9f1461835b7be5ac825c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies",
+						"676e9f1461835b7be5ac825c"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Movie",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjc2ZmIyMzdkMmUyMzY2MTE4OGY3M2MxIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTczNTQ4MzgzMSwiZXhwIjoxNzM1NDg3NDMxfQ.IrDUdXN1aInRJPfwmPRmb1G5eK-_qoHqlOsul-GmQjA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/movies/676e9f1461835b7be5ac825c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"676e9f1461835b7be5ac825c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-YWwd9VM98XGQrD3I+gqXdemiOV0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Dec 2024 14:50:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Movie deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Movie ",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjc2ZmIyMzdkMmUyMzY2MTE4OGY3M2MxIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTczNTM4NzY0MCwiZXhwIjoxNzM1MzkxMjQwfQ.vue029kjR9jldJ4oeYV0Oc1UjxI4FL8IezO41oaAMjE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Parasite3\",\r\n    \"genre\": \"Thriller\",\r\n    \"rating\": 8.6,\r\n    \"streamingLink\": \"https://example.com/parasite\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movies/676fb2b5b2dd6532e86fa382",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies",
+						"676fb2b5b2dd6532e86fa382"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Movie",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjc2ZmIyMzdkMmUyMzY2MTE4OGY3M2MxIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTczNTM4NzY0MCwiZXhwIjoxNzM1MzkxMjQwfQ.vue029kjR9jldJ4oeYV0Oc1UjxI4FL8IezO41oaAMjE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Parasite3\",\r\n    \"genre\": \"Thriller\",\r\n    \"rating\": 8.6,\r\n    \"streamingLink\": \"https://example.com/parasite\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/movies/676fb2b5b2dd6532e86fa382",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"676fb2b5b2dd6532e86fa382"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "141"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8d-MFPm+Fy5icH21bO0DvnmYaE0FFk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 28 Dec 2024 12:14:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"676fb2b5b2dd6532e86fa382\",\n    \"title\": \"Parasite3\",\n    \"genre\": \"Thriller\",\n    \"rating\": 8.6,\n    \"streamingLink\": \"https://example.com/parasite\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "register user or admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"adminUser2\",\r\n    \"email\": \"admin2@example.com\",\r\n    \"password\": \"adminpassword2\",\r\n    \"role\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register user or admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"adminUser2\",\r\n    \"email\": \"admin2@example.com\",\r\n    \"password\": \"adminpassword2\",\r\n    \"role\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-nMoFx54+czTntmSLXl3mqIsZV4A\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 28 Dec 2024 08:09:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User registered successfully\"\n}"
+				}
+			]
+		}
+	]
+}

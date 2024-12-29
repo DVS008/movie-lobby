@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "676fa867cb98a5579c6b383f"
+  },
+  "username": "adminUser",
+  "email": "admin@example.com",
+  "password": "$2b$10$7O37bWB7nvPmcV9wWgngCuqt5Cs4gk7qpG1hXOIZWTFCEFDDiscbe",
+  "role": "admin",
+  "createdAt": {
+    "$date": "2024-12-28T07:27:35.558Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-28T07:27:35.558Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676fb1f7d2e23661188f73bc"
+  },
+  "username": "adminUser1",
+  "email": "admin1@example.com",
+  "password": "$2b$10$ZemsbndEeT8Ts0LQ5qaL..Kom4zWgUXSI7Jhh521v5dWE5V1esbj6",
+  "role": "user",
+  "createdAt": {
+    "$date": "2024-12-28T08:08:23.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-28T08:08:23.739Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676fb237d2e23661188f73c1"
+  },
+  "username": "adminUser2",
+  "email": "admin2@example.com",
+  "password": "$2b$10$cZCFCwSMDWq2mZgJXs1wze06DdV6RTe00Wf.SQUIUJo3Yc9kLUcj2",
+  "role": "admin",
+  "createdAt": {
+    "$date": "2024-12-28T08:09:27.525Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-28T08:09:27.525Z"
+  },
+  "__v": 0
+}]
